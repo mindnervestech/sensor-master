@@ -26,7 +26,6 @@ public class SensorController {
 	public ServerResult getSensors() {
 		return sensorService.getSensors();
 	}
-	
 	@GetMapping(value = "/sensor/{id}")
 	public ServerResult getOneSensors(@PathVariable Long id) {
 		return sensorService.getOneSensor(id);
